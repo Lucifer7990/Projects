@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .5s;
+    font-family: poppins;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #baedee;
+    overflow: hidden;
+}
+.marker > img{
+    width: 50px;
+    mix-blend-mode: color-burn;
+    cursor: pointer;
+}
+img{width: 100%;
+height: 100%;}
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.marker{
+    position: absolute;
+}
+
+
+.dis{
+    width: 300px;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;  
+    transform: translateY(-20px); 
+    transition: all .5s;
+
+}
+.marker:hover .dis{
+    display: block;
+    transform: translateY(0px); 
+}
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primaryColor: #ff4d4d;
+            --light-dark-bg: rgb(255, 236, 236);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+            text-align: center;
+            overflow-x: hidden;
+            text-transform: capitalize;
+            transition: .3s ease all;
+        }
+
+        nav {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .link {
+            margin-right: 20px;
+            text-decoration: none;
+            color: var(--primaryColor);
+            font-weight: bold;
+        }
+
+        .hero,
+        .cont {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .hero {
+            background: black url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg) no-repeat fixed center;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .text {
+            margin-top: 30vh;
+        }
+
+        h1 span {
+            color: var(--primaryColor);
+        }
+
+        .btn {
+            display: inline-block;
+            border: 2px solid var(--primaryColor);
+            color: var(--primaryColor);
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: var(--primaryColor);
+            color: #fff;
+        }
+
+        .darken {
+
+            background-color: var(--light-dark-bg);
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: var(--primaryColor);
+        }
+
+        .quick-link {
+            display: none;
+            background-color: var(--primaryColor);
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            z-index: 2;
+        }
+
+        .link-visible {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero" id="home">
+        <nav>
+            <div class="nav-links">
+                <a href="#home" class="link">home</a>
+                <a href="#projects" class="link">projects</a>
+                <a href="#about" class="link">about</a>
+                <a href="#contect" class="link">contect</a>
+            </div>
+        </nav>
+        <div class="text">
+            <h1>Easy <span>scroll effect</span> learn fastest method to learn such things</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laboriosam.</p>
+            <div class="btn">click me</div>
+        </div>
+    </div>
+    <div class="quick-link">
+        top
+    </div>
+    <div class="cont" id="projects">
+        <h1>this is <span>projects</span></h1>
+    </div>
+    <div class="cont darken" id="about">
+        <h1>this is <span>about</span></h1>
+    </div>
+    <div class="cont" id="contect">
+        <h1>this is <span>contect</span></h1>
+    </div>
+    <div class="footer">
+        &copy;lucifer, All rights reserved 2020
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

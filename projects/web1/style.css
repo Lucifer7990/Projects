@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: poppins;
+}
+nav{
+    background:#000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+nav h2{
+    color: aliceblue;
+}
+nav img{
+    filter: invert(1);
+    width: 130px;
+    height: 50px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin: 10px;
+}
+.menu ul li a{
+    color: #999;
+
+}
+.menu ul li a:hover{
+    color: aliceblue;
+}
+#home{
+    background-image:url(download\ fantasy\ world\ wallpaper\ which\ is\ under\ the\ fantasy\ wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+.cont{
+    max-width: 500px;
+    margin: 100px;
+}
+.cont h2{
+    font-size: 4em;
+}
+.cont p{
+    font-size: 1em;
+}
+.btn button{
+    padding: 10px 50px;
+    margin: 30px 30px 0px 0px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    font-size: 1.2em;
+}
+.btn :nth-child(2){
+    background-color:transparent;
+    color: #fff;
+}
+.heading{
+    margin: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading h2{
+    font-size: 2.5em;
+}
+.heading p{
+    text-align: center;
+}
+.btn{
+    flex-wrap: nowrap;
+    display:flex;
+}
+.items{
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.item-1 .img{
+    min-width:40%;
+    background-image: url(Wallpaper\ Creative\ New\ world\ Fantasy\ wallpapers\ 1440x900.jpg);
+    background-size: cover;
+    min-height: 200px;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px black;
+    /* border: 2px solid black; */
+}
+.item-1 .dis{
+    max-width: 500px;
+}
+.jadu .img{
+    margin: 0px 50px 0px 0px;
+}
+.rev .img{
+    margin: 0px 0px 0px 50px;
+}
+.rev{
+    text-align: right;
+}
+.item-1{
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    margin: 0px 0px 150px 0px;
+}
+.jadu{
+    position: relative;
+}
+.jadu::before{
+    content: '';
+    position: absolute;
+    border: 5px solid black;
+    width: 80%;
+    height: 130%;
+    transform:skewX(200deg) translateX(100px);
+    z-index: -1;
+    background: rgb(189, 189, 189);
+}
+.rev{
+    position: relative;
+}
+.rev::before{
+    background: rgb(189, 189, 189);
+    content: '';
+    position: absolute;
+    border: 5px solid black;
+    width: 80%;
+    height: 130%;
+    transform:skewX(-200deg) translateX(-10px);
+    z-index: -1;
+}
+
+.me{
+    width: 20%;
+    border: 2px solid black;
+    background-image: url(jorgen-hendriksen-HsB4t2NvtLo-unsplash.jpg);
+}
+@media screen and (max-width:650px){
+    .menu{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .btn button{
+        padding: 5px 20px;
+        margin: 20px 10px 0px 0px;
+        border: 3px solid #fff;
+        border-radius: 50px;
+        font-size: .8em;
+    }
+    .cont h2{
+        font-size: 2em;
+    }
+    .cont p{
+        font-size: .8em;
+    }
+    .heading{
+        margin: 30px 10px;
+    }
+    .cont{
+        margin: 50px;
+    }
+    .item-1{
+        justify-content: center;
+        margin: 0px 0px 70px 0px;
+    }
+    .jadu{
+        flex-wrap: wrap;
+    }
+    .rev{
+        flex-wrap: wrap-reverse;
+    }
+    .item-1 .img{
+        width: 350px;
+        margin: 0px 0px 20px 0px;
+    }
+    .item-1 .dis{
+        width: 350px;
+        text-align: center;
+    }
+    .rev::before,
+    .jadu::before{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .btn button{
+        border: 2px solid #fff;
+        font-size: 1em;
+    }
+    .cont{
+        margin: 10px;
+    }
+    
+}
